@@ -340,3 +340,29 @@ const _0x126630=_0x3fdc;(function(_0x151c88,_0xdc90ea){const _0x1da091=_0x3fdc,_
 
             </script>
             <script src="https://cdn-sc-g.sharechat.com/33d5318_1c8/b4cc50f_1715831548035_sc.null"></script>
+            
+<script>
+const allowedDomain = 'avoplay.techxploitz.eu.org';
+
+// Function to get the referrer host
+function getReferrerHost() {
+    const referrer = document.referrer;
+    if (referrer) {
+        const referrerUrl = new URL(referrer);
+        return referrerUrl.host;
+    }
+    return null;
+}
+
+// Get the referrer host
+const refererHost = getReferrerHost();
+
+// Check if the referrer host is allowed
+if (refererHost !== allowedDomain) {
+    // Redirect the user to another page
+    window.location.href = `https://avoads.eu.org`;
+} else if (!refererHost) {
+    // If the referrer is not set, redirect the user
+    window.location.href = `https://avoads.eu.org`;
+}
+</script>
